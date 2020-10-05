@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 16px;
+}
+
+h1    {
+    background-color:palegoldenrod;
+    border:double 3px rgb(134, 211, 224);
+    color:rgb(6, 146, 156);
+    font-family:"Times New Roman";
+    font-size:20px;
+    font-weight:600;
+    text-align: center;
+}
+
+table {
+    background-color:peachpuff;
+    border: 6px palevioletred;
+}
+
+td    {
+    background-color:LemonChiffon;
+    border:solid 2px SlateBlue;
+    color:SlateBlue;
+    height:30px;
+    text-align:center;
+    font-family:"Lucida Sans";
+    font-size:1em;
+    font-weight:500;
+    width:25px;
+}

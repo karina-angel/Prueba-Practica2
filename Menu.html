@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Menú</title>
+<meta charset="UTF-8">
+<link rel="StyleSheet" href="css/estilos.css" type="text/css">
+</head>
+<body>
+    <center>
+        <header data-shadow="Menú">Orden de Pollo &#127831;</header><br>
+        <br><br><br></center>
+        
+         <!-- radiobutton de menus  -->
+          <div id="principal"> SubTotal_1: $ 0</div>
+         <form class="combos">
+         <br><br>
+         
+         <label class="radio-inline">
+            <img src="imagenes/menu1.png" width="100" height="100"> 
+            <input type="radio" checked="checked" id="n1" name="menup" value="7.25" />SuperCombo
+            <span class="checkmark"></span>
+          </label>
+
+         <!-- <img src="imagenes/menu1.jpg" width="100" height="100">-->
+
+          <label class="radio-inline">
+            <img src="imagenes/menu2.jpg" width="100" height="100"> 
+            <input type="radio" id="n1" name="menup" value="5.75"/>Personal
+            <span class="checkmark"></span>
+          </label>
+
+         <!-- <img src="imagenes/menu1.jpg" width="100" height="100"> -->
+
+          <label class="radio-inline">
+            <img src="imagenes/menu3.png" width="100" height="100"> 
+            <input type="radio" id="n1" name="menup" value="3.50"/>Infantil
+            <span class="checkmark"></span>
+          </label> 
+          <button>Obtener Subtotal 1</button>
+        </form>
+        <br><br><br><br><br><br>
+          
+          <!--Checkboxs-->
+     <h2>Adicionales:</h2>
+
+     <div id="totales">SubTotal 2:$ 0</div>   
+     <form name="miform" id="miform">
+<label class="container1">Ensalada..................................$1.50
+  <input name ="id" id="clt"  type="checkbox" value="1.50-ab" onclick="sumar()"/>
+  <span class="checkmark1"></span>
+</label>
+
+<label class="container1">Papa Frita................................$1.25
+    <input name ="id" id="clt"  type="checkbox" value="1.25-ab" onclick="sumar()"/>
+  <span class="checkmark1"></span>
+</label>
+
+<label class="container1">Pieza de pollo grande.....................$1.75
+    <input name ="id" id="clt"  type="checkbox" value="1.75-ab" onclick="sumar()"/>
+  <span class="checkmark1"></span>
+</label>
+
+<label class="container1">Pieza de pollo mediana....................$1.50
+  <input name ="id" id="clt"  type="checkbox" value="1.50-ab" onclick="sumar()"/>
+  <span class="checkmark1"></span>
+</label>
+
+<label class="container1">Pieza de pollo pequeña....................$1.25
+    <input name ="id" id="clt"  type="checkbox" value="1.25-ab" onclick="sumar()"/>
+    <span class="checkmark1"></span>
+  </label>
+
+  <label class="container1">Bebida grande...........................$1.50
+    <input name ="id" id="clt"  type="checkbox" value="1.50-ab" onclick="sumar()"/>
+    <span class="checkmark1"></span>
+  </label>
+
+  <label class="container1">Bebida mediana..........................$1.25
+    <input name ="id" id="clt"  type="checkbox" value="1.25-ab" onclick="sumar()"/>
+    <span class="checkmark1"></span>
+  </label>
+
+  <label class="container1">Bebida pequeña..........................$1.00
+    <input name ="id" id="clt"  type="checkbox" value="1.00-ab" onclick="sumar()"/>
+    <span class="checkmark1"></span>
+  </label>
+
+  <label class="container1">Café....................................$0.50
+    <input name ="id" id="clt"  type="checkbox" value="0.50-ab" onclick="sumar()"/>
+    <span class="checkmark1"></span>
+  </label>
+
+  <label class="container1">Postre..................................$1.25
+    <input name ="id" id="clt"  type="checkbox" value="1.25-ab" onclick="sumar()"/>
+    <span class="checkmark1"></span>
+  </label>
+
+</form><br><br><br>
+
+
+<!--DIV OCULTO-------------------------------------->
+
+<input type="submit" id="boton" value="Ocultar" 
+onclick="Mostrar_Ocultar()"/><br>
+
+  <div id="totalpagar"  style="width: 575px; height: 210px; background: coral;" >
+
+    <h2 >Sugerencias: </h2>
+    <p class="caja" contenteditable="true"></p>
+    <!--TOTAL-------->
+     
+     <input type="button" id="precio" value="Total a Pagar: $" onclick="sumar();ObtenerSubTotal1(event)"/>
+     <br>
+
+
+     Press Ctrl + s<br><br> 
+     
+
+</div>
+
+
+<!--GUARDAR COMENTARIO-------------------------------------->
+
+
+
+
+
+
+
+
+
+</body>
+<script src="js/menu.js"></script>
+</html>
